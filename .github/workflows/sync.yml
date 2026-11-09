@@ -1,0 +1,35 @@
+name: Sync Meta rules from upstream
+
+on:
+  schedule:
+    # Upstream releases daily; check once a day.
+    - cron: "0 3 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Fetch upstream Clash yaml and convert to Loon format
+        run: |
+          python3 scripts/convert.py \
+            https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/classical/meta.yaml \
+            meta.list
+      - name: Commit and push if changed
+        run: |
+          if [[ -n "$(git status --porcelain)" ]]; then
+            git config user.name "github-actions[bot]"
+            git config user.email "github-actions[bot]@users.noreply.github.com"
+            git add -A
+            git commit -m "Sync Meta rules from upstream $(date -u +%Y-%m-%d)"
+            git push
+          else
+            echo "No changes."
+          fi
