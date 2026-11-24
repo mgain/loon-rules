@@ -16,7 +16,7 @@ Loon 用的分流规则集，自动同步自上游 Clash 规则。
 - 内容：X 公司旗下域名（Twitter / X、x.com、twimg.com、t.co，以及 Grok、x.ai 等）
 - 当前版本：28 条规则（DOMAIN-SUFFIX 28）
 
-### Crypto — `crypto.list`
+### Crypto-US — `crypto-US.list`
 
 - 手写维护，没有上游可同步（MetaCubeX、v2fly 等规则集里都没有这两个服务）
 - 内容：Infini（infini.money，稳定币银行/虚拟卡）、Elios Pay（eliospay.com，自托管稳定币账户/卡）
@@ -34,7 +34,7 @@ Loon 用的分流规则集，自动同步自上游 Clash 规则。
 [Remote Rule]
 https://raw.githubusercontent.com/mgain/loon-rules/main/meta.list, policy=PROXY, tag=Meta, enabled=true
 https://raw.githubusercontent.com/mgain/loon-rules/main/x.list, policy=PROXY, tag=X, enabled=true
-https://raw.githubusercontent.com/mgain/loon-rules/main/crypto.list, policy=PROXY, tag=Crypto, enabled=true
+https://raw.githubusercontent.com/mgain/loon-rules/main/crypto-US.list, policy=PROXY, tag=Crypto-US, enabled=true
 https://raw.githubusercontent.com/mgain/loon-rules/main/crypto-EU.list, policy=PROXY, tag=Crypto-EU, enabled=true
 ```
 
@@ -50,13 +50,13 @@ https://raw.githubusercontent.com/mgain/loon-rules/main/crypto-EU.list, policy=P
 
 也可以在仓库 Actions 页点 `Run workflow` 手动立即同步一次。
 
-`crypto.list` 和 `crypto-EU.list` 不参与自动同步，手动维护。
+`crypto-US.list` 和 `crypto-EU.list` 不参与自动同步，手动维护。
 
 ## 文件
 
 - `meta.list` — Loon 规则文件（Meta）
 - `x.list` — Loon 规则文件（X）
-- `crypto.list` — Loon 规则文件（Crypto，手写维护）
+- `crypto-US.list` — Loon 规则文件（Crypto-US，手写维护）
 - `crypto-EU.list` — Loon 规则文件（Crypto-EU，手写维护）
 - `scripts/convert.py` — Clash yaml → Loon `.list` 转换脚本
 - `.github/workflows/sync.yml` — 每日自动同步
