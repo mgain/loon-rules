@@ -12,3 +12,7 @@ DOMAIN-SUFFIX,ether.fi
 DOMAIN-SUFFIX,pulsar.finance
 # Shotgun — Pulsar 团队的 Solana 交易终端
 DOMAIN-SUFFIX,shotgun.fun
+# MetaMask — 无单独规则集，合集里只有 metamask.io
+DOMAIN-SUFFIX,metamask.io
+# Infura — MetaMask 默认 RPC 节点（ConsenSys）
+DOMAIN-SUFFIX,infura.io
