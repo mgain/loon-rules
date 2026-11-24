@@ -1,0 +1,8 @@
+# Crypto EU services, maintained by hand (no upstream to sync from)
+# Kraken — MetaCubeX kraken.yaml，只有 2 条
+DOMAIN-SUFFIX,kraken.com
+DOMAIN-SUFFIX,kraken.onl
+# Krak — Kraken 的 P2P 支付 App，没有现成规则集
+DOMAIN-SUFFIX,krak.app
+# Bybit EU — 独立的 MiCA 平台，不在 MetaCubeX bybit.yaml（16 条全球版）里
+DOMAIN-SUFFIX,bybit.eu
