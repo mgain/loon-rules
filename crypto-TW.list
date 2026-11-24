@@ -79,3 +79,5 @@ DOMAIN-SUFFIX,saasexch.io
 DOMAIN-SUFFIX,trustwallet.com
 # MetaMask — 无单独规则集，合集里只有 metamask.io
 DOMAIN-SUFFIX,metamask.io
+# Infura — MetaMask 默认 RPC 节点（ConsenSys）
+DOMAIN-SUFFIX,infura.io
