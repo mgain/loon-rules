@@ -6,3 +6,9 @@ DOMAIN-SUFFIX,kraken.onl
 DOMAIN-SUFFIX,krak.app
 # Bybit EU — 独立的 MiCA 平台，不在 MetaCubeX bybit.yaml（16 条全球版）里
 DOMAIN-SUFFIX,bybit.eu
+# Ether.fi — 流动性质押 / Cash 卡
+DOMAIN-SUFFIX,ether.fi
+# Pulsar Finance — 跨链投资组合追踪（现为 Shotgun 交易终端）
+DOMAIN-SUFFIX,pulsar.finance
+# Shotgun — Pulsar 团队的 Solana 交易终端
+DOMAIN-SUFFIX,shotgun.fun
