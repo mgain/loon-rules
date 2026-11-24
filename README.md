@@ -30,9 +30,9 @@ Loon 用的分流规则集，自动同步自上游 Clash 规则。
 
 ### Crypto-TW — `crypto-TW.list`
 
-- 手写维护（Gate、Bybit 取自 MetaCubeX 上游快照，Bitget 手写）
-- 内容：Gate（gate.io 等 8 条）、Bitget（bitget.com 及两个官网镜像 bitgetapp.com、bitgetapps.com）、Bybit 全球版（bybit.com 等 16 条；bybit.eu 在 crypto-EU 里）
-- 当前版本：27 条规则（DOMAIN 2、DOMAIN-SUFFIX 25）
+- 手写维护（Gate、Bybit、Binance、Trust Wallet 取自 MetaCubeX 上游快照，Bitget、MetaMask 手写）
+- 内容：Gate（gate.io 等 8 条）、Bitget（bitget.com 及两个官网镜像 bitgetapp.com、bitgetapps.com）、Bybit 全球版（bybit.com 等 16 条；bybit.eu 在 crypto-EU 里）、Binance（45 条）、Trust Wallet（trustwallet.com）、MetaMask（metamask.io）
+- 当前版本：74 条规则（DOMAIN 4、DOMAIN-SUFFIX 70）
 
 ## 在 Loon 里用
 
