@@ -28,6 +28,12 @@ Loon 用的分流规则集，自动同步自上游 Clash 规则。
 - 内容：Kraken（kraken.com、kraken.onl）、Krak（krak.app，Kraken 的 P2P 支付 App）、Bybit EU（bybit.eu，独立的 MiCA 平台）、Ether.fi（ether.fi，流动性质押 / Cash 卡）、Pulsar Finance（pulsar.finance，现为 Shotgun 交易终端）、Shotgun（shotgun.fun，Solana 交易终端）
 - 当前版本：7 条规则（DOMAIN-SUFFIX 7）
 
+### Crypto-TW — `crypto-TW.list`
+
+- 手写维护（Gate、Bybit 取自 MetaCubeX 上游快照，Bitget 手写）
+- 内容：Gate（gate.io 等 8 条）、Bitget（bitget.com 及两个官网镜像 bitgetapp.com、bitgetapps.com）、Bybit 全球版（bybit.com 等 16 条；bybit.eu 在 crypto-EU 里）
+- 当前版本：27 条规则（DOMAIN 2、DOMAIN-SUFFIX 25）
+
 ## 在 Loon 里用
 
 ```ini
@@ -36,6 +42,7 @@ https://raw.githubusercontent.com/mgain/loon-rules/main/meta.list, policy=PROXY,
 https://raw.githubusercontent.com/mgain/loon-rules/main/x.list, policy=PROXY, tag=X, enabled=true
 https://raw.githubusercontent.com/mgain/loon-rules/main/crypto-US.list, policy=PROXY, tag=Crypto-US, enabled=true
 https://raw.githubusercontent.com/mgain/loon-rules/main/crypto-EU.list, policy=PROXY, tag=Crypto-EU, enabled=true
+https://raw.githubusercontent.com/mgain/loon-rules/main/crypto-TW.list, policy=PROXY, tag=Crypto-TW, enabled=true
 ```
 
 把 `policy=PROXY` 换成你自己的策略组名。
@@ -50,7 +57,7 @@ https://raw.githubusercontent.com/mgain/loon-rules/main/crypto-EU.list, policy=P
 
 也可以在仓库 Actions 页点 `Run workflow` 手动立即同步一次。
 
-`crypto-US.list` 和 `crypto-EU.list` 不参与自动同步，手动维护。
+`crypto-US.list`、`crypto-EU.list` 和 `crypto-TW.list` 不参与自动同步，手动维护。
 
 ## 文件
 
@@ -58,5 +65,6 @@ https://raw.githubusercontent.com/mgain/loon-rules/main/crypto-EU.list, policy=P
 - `x.list` — Loon 规则文件（X）
 - `crypto-US.list` — Loon 规则文件（Crypto-US，手写维护）
 - `crypto-EU.list` — Loon 规则文件（Crypto-EU，手写维护）
+- `crypto-TW.list` — Loon 规则文件（Crypto-TW，手写维护）
 - `scripts/convert.py` — Clash yaml → Loon `.list` 转换脚本
 - `.github/workflows/sync.yml` — 每日自动同步
