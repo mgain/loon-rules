@@ -77,7 +77,3 @@ DOMAIN-SUFFIX,saasexch.info
 DOMAIN-SUFFIX,saasexch.io
 # Trust Wallet — MetaCubeX trustwallet.yaml，只有 1 条
 DOMAIN-SUFFIX,trustwallet.com
-# MetaMask — 无单独规则集，合集里只有 metamask.io
-DOMAIN-SUFFIX,metamask.io
-# Infura — MetaMask 默认 RPC 节点（ConsenSys）
-DOMAIN-SUFFIX,infura.io
