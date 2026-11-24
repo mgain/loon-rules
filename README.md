@@ -25,8 +25,8 @@ Loon 用的分流规则集，自动同步自上游 Clash 规则。
 ### Crypto-EU — `crypto-EU.list`
 
 - 手写维护，没有上游可同步
-- 内容：Kraken（kraken.com、kraken.onl）、Krak（krak.app，Kraken 的 P2P 支付 App）、Bybit EU（bybit.eu，独立的 MiCA 平台）
-- 当前版本：4 条规则（DOMAIN-SUFFIX 4）
+- 内容：Kraken（kraken.com、kraken.onl）、Krak（krak.app，Kraken 的 P2P 支付 App）、Bybit EU（bybit.eu，独立的 MiCA 平台）、Ether.fi（ether.fi，流动性质押 / Cash 卡）、Pulsar Finance（pulsar.finance，现为 Shotgun 交易终端）、Shotgun（shotgun.fun，Solana 交易终端）
+- 当前版本：7 条规则（DOMAIN-SUFFIX 7）
 
 ## 在 Loon 里用
 
