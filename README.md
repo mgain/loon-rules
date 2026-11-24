@@ -22,6 +22,12 @@ Loon 用的分流规则集，自动同步自上游 Clash 规则。
 - 内容：Infini（infini.money，稳定币银行/虚拟卡）、Elios Pay（eliospay.com，自托管稳定币账户/卡）
 - 当前版本：2 条规则（DOMAIN-SUFFIX 2）
 
+### Crypto-EU — `crypto-EU.list`
+
+- 手写维护，没有上游可同步
+- 内容：Kraken（kraken.com、kraken.onl）、Krak（krak.app，Kraken 的 P2P 支付 App）、Bybit EU（bybit.eu，独立的 MiCA 平台）
+- 当前版本：4 条规则（DOMAIN-SUFFIX 4）
+
 ## 在 Loon 里用
 
 ```ini
@@ -29,6 +35,7 @@ Loon 用的分流规则集，自动同步自上游 Clash 规则。
 https://raw.githubusercontent.com/mgain/loon-rules/main/meta.list, policy=PROXY, tag=Meta, enabled=true
 https://raw.githubusercontent.com/mgain/loon-rules/main/x.list, policy=PROXY, tag=X, enabled=true
 https://raw.githubusercontent.com/mgain/loon-rules/main/crypto.list, policy=PROXY, tag=Crypto, enabled=true
+https://raw.githubusercontent.com/mgain/loon-rules/main/crypto-EU.list, policy=PROXY, tag=Crypto-EU, enabled=true
 ```
 
 把 `policy=PROXY` 换成你自己的策略组名。
@@ -43,12 +50,13 @@ https://raw.githubusercontent.com/mgain/loon-rules/main/crypto.list, policy=PROX
 
 也可以在仓库 Actions 页点 `Run workflow` 手动立即同步一次。
 
-`crypto.list` 不参与自动同步，手动维护。
+`crypto.list` 和 `crypto-EU.list` 不参与自动同步，手动维护。
 
 ## 文件
 
 - `meta.list` — Loon 规则文件（Meta）
 - `x.list` — Loon 规则文件（X）
 - `crypto.list` — Loon 规则文件（Crypto，手写维护）
+- `crypto-EU.list` — Loon 规则文件（Crypto-EU，手写维护）
 - `scripts/convert.py` — Clash yaml → Loon `.list` 转换脚本
 - `.github/workflows/sync.yml` — 每日自动同步
