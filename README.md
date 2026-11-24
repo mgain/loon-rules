@@ -25,14 +25,14 @@ Loon 用的分流规则集，自动同步自上游 Clash 规则。
 ### Crypto-EU — `crypto-EU.list`
 
 - 手写维护，没有上游可同步
-- 内容：Kraken（kraken.com、kraken.onl）、Krak（krak.app，Kraken 的 P2P 支付 App）、Bybit EU（bybit.eu，独立的 MiCA 平台）、Ether.fi（ether.fi，流动性质押 / Cash 卡）、Pulsar Finance（pulsar.finance，现为 Shotgun 交易终端）、Shotgun（shotgun.fun，Solana 交易终端）
-- 当前版本：7 条规则（DOMAIN-SUFFIX 7）
+- 内容：Kraken（kraken.com、kraken.onl）、Krak（krak.app，Kraken 的 P2P 支付 App）、Bybit EU（bybit.eu，独立的 MiCA 平台）、Ether.fi（ether.fi，流动性质押 / Cash 卡）、Pulsar Finance（pulsar.finance，现为 Shotgun 交易终端）、Shotgun（shotgun.fun，Solana 交易终端）、MetaMask（metamask.io）、Infura（infura.io，MetaMask 默认 RPC 节点）
+- 当前版本：9 条规则（DOMAIN-SUFFIX 9）
 
 ### Crypto-TW — `crypto-TW.list`
 
-- 手写维护（Gate、Bybit、Binance、Trust Wallet 取自 MetaCubeX 上游快照，Bitget、MetaMask、Infura 手写）
-- 内容：Gate（gate.io 等 8 条）、Bitget（bitget.com 及两个官网镜像 bitgetapp.com、bitgetapps.com）、Bybit 全球版（bybit.com 等 16 条；bybit.eu 在 crypto-EU 里）、Binance（45 条）、Trust Wallet（trustwallet.com）、MetaMask（metamask.io）、Infura（infura.io，MetaMask 默认 RPC 节点）
-- 当前版本：75 条规则（DOMAIN 4、DOMAIN-SUFFIX 71）
+- 手写维护（Gate、Bybit、Binance、Trust Wallet 取自 MetaCubeX 上游快照，Bitget 手写）
+- 内容：Gate（gate.io 等 8 条）、Bitget（bitget.com 及两个官网镜像 bitgetapp.com、bitgetapps.com）、Bybit 全球版（bybit.com 等 16 条；bybit.eu 在 crypto-EU 里）、Binance（45 条）、Trust Wallet（trustwallet.com）
+- 当前版本：73 条规则（DOMAIN 4、DOMAIN-SUFFIX 69）
 
 ## 在 Loon 里用
 
